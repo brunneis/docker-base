@@ -12,7 +12,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-FROM brunneis/centos-base:7.2
+FROM brunneis/centos:7.2
 MAINTAINER "Rodrigo Martínez" <dev@brunneis.com>
 
 ################################################
