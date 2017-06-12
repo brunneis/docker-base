@@ -19,14 +19,11 @@ MAINTAINER "Rodrigo Martínez" <dev@brunneis.com>
 # CENTOS DEVELOPMENT BASE IMAGE
 ################################################
 
-# Environment variables
-ENV LC_ALL=en_US.UTF-8 \
-LANG=en_US.UTF-8 \
-LANGUAGE=en_US.UTF-8
-
 RUN \
-	yum -y update && \
-	yum -y install \
+	yum -y update \
+	&& yum -y install epel-release \
+    && yum -y install \
+        htop \
 		wget \
 		nano \
 		ca-certificates \

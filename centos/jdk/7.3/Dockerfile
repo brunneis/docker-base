@@ -16,7 +16,7 @@ FROM brunneis/centos:7.3
 MAINTAINER "Rodrigo Martínez" <dev@brunneis.com>
 
 ################################################
-# JDK
+# OPENJDK
 ################################################
 
 RUN yum -y update \
