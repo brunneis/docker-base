@@ -1,5 +1,5 @@
-# CentOS 7.3 Development Base Image
-# Copyright (C) 2016 Rodrigo Martínez <dev@brunneis.com>
+# CentOS 7 Development Base Image
+# Copyright (C) 2016-2018 Rodrigo Martínez <dev@brunneis.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,7 +12,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-FROM centos:7.3.1611
+FROM centos:7
 MAINTAINER "Rodrigo Martínez" <dev@brunneis.com>
 
 ################################################
@@ -20,11 +20,11 @@ MAINTAINER "Rodrigo Martínez" <dev@brunneis.com>
 ################################################
 
 RUN \
-	yum -y update \
-	&& yum -y install epel-release \
-    && yum -y install \
-        htop \
-		wget \
-		nano \
-		ca-certificates \
-	&& yum clean all
+  yum -y update \
+  && yum -y install epel-release \
+  && yum -y install \
+    htop \
+    wget \
+    nano \
+    ca-certificates \
+  && yum clean all
